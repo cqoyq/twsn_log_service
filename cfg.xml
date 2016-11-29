@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application>
+	<local_log_visitor>
+					<type>every_day</type>	
+					<filename>log</filename>		
+					<path>logs</path>					
+					<level>all</level>					
+	</local_log_visitor>
+	<rabbitmq_receiver>
+				<type>1</type>
+				<ip>127.0.0.1</ip>						
+				<port>5672</port>							
+				<username>guest</username>		
+				<pwd>guest</pwd>						
+				<host>/</host>	
+				<exchange></exchange>									
+				<routingkey>twsn_log_service</routingkey>		
+	</rabbitmq_receiver>
+</application>
