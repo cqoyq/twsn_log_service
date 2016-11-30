@@ -54,9 +54,6 @@ int main (int argc, char *argv[]) {
 		return 0;
 	}
 
-	string s = "aaaa";
-	LOCAL_LOG_VISITOR_TYPE::instance()->handle(LOG_LEVEL_INFO, LOG_TAG_INFO, s);
-
 	// Construct rabbitmq service.
 	RABBITMQ_SERVICE_TYPE::construct();
 
